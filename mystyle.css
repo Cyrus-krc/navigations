@@ -1,14 +1,12 @@
-@charset "utf-8";
-/* CSS Document */
 body{
-	background-color:#2d4761;	
+	background-color:#45718c;
 }
 .container > ul{
-	background-color:#45718c;
+	background-color:#2d4761;
 	list-style-type:none;
-	min-height:60px;
-	border-radius:5px;		
+	min-height:45px;	
 	float:left;
+	border-radius:5px;
 }
 .container > ul  li{
 	float : left;
@@ -16,25 +14,39 @@ body{
 	position    : relative;
 }
 .container ul li:last-child {
-	padding-right:38px;
-	border-radius:none;
+	padding-right:45px;
+	border-right:none;
 }
 .container > ul a{
 	text-decoration: none;
 	display: block;
-	color  : #ffffeb;
-	padding: 10px 8px 10px 15px;
+	color  : #ffffca;
+	padding: 12px 8px 12px 15px;
 	text-align: right;
 	font-family    : 'bmitra' , Arial;
 	font-size : 16px;
 	text-transform:capitalize;
 }
 .container ul > li:hover > a{
-	border-radius:5px;
-	background-color:#314650;
-	-webkit-transition: background-color 500ms;
-	-ms-transition: background-color 500ms;
-	-o-transition: background-color 500ms;
-	-moz-transition: background-color 500ms;
-	transition: background-color 500ms;
+	border-radius:6px;
+	background-color:#213650;
+	-webkit-transition: background-color 800ms;
+	-moz-transition: background-color 800ms;
+	-ms-transition: background-color 800ms;
+	-o-transition: background-color 800ms;
+	transition: background-color 800ms;
 }
+.container > ul > ul{
+	list-style-type: none;
+	position       : absolute;
+	top    : 46px;
+	right  : 0;
+	z-index: 2;
+	display: none;
+	width  : 160px;	
+}
+.container > ul li:hover > ul{
+	display:block;
+}
+
+
