@@ -38,15 +38,20 @@ body{
 }
 .container > ul > ul{
 	list-style-type: none;
-	position       : absolute;
+	position:absolute;
 	top    : 46px;
 	right  : 0;
 	z-index: 2;
-	display: none;
+	display:none;
 	width  : 160px;	
 }
-.container > ul li:hover > ul{
+.container .menu > li:hover > a > span{
 	display:block;
+	background-color: #425961;
+	border-radius   : 3px;
+	-webkit-transition: background-color 600ms;
+	-moz-transition: background-color 600ms;
+	-o-transition: background-color 600ms;
+	-ms-transition: background-color 600ms;
+	transition: background-color 600ms;
 }
-
-
