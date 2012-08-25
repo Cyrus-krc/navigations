@@ -7,11 +7,15 @@ body{
 	min-height:43px;	
 	float:left;
 	border-radius:5px;
+	max-height: 0;
+	-webkit-transition: max-height 1ms linear 1s;
+	-moz-transition: max-height 1ms linear 1s;
 }
 .container ul  li{
 	float : left;
 	border-right: 1px solid #445356;
 	position    : relative;
+	display: inline-block;
 }
 .container .menu li:last-child {
 	border-right:none;
@@ -48,6 +52,9 @@ body{
 	display:block;
 	background-color:#1d3751;
 	border-radius   : 5px;
+	max-height: 2000px;
+	 -webkit-transition: none;
+     -moz-transition: none;
 }
 .container .menu li:hover .sub a{
 	border-radius   : 5px;
@@ -72,4 +79,103 @@ body{
 }
 .container .menu li:hover .sub li{
 	border-right:none;	
+}
+
+.menu > li:hover .sub li:nth-child(1) {
+  -webkit-transition-delay: 0s;
+     -moz-transition-delay: 0s;
+      -ms-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.menu > li:hover .sub li:nth-child(2) {
+  -webkit-transition-delay: 66ms;
+     -moz-transition-delay: 66ms;
+      -ms-transition-delay: 66ms;
+       -o-transition-delay: 66ms;
+          transition-delay: 66ms;
+}
+
+.menu > li:hover .sub li:nth-child(3) {
+  -webkit-transition-delay: 133ms;
+     -moz-transition-delay: 133ms;
+      -ms-transition-delay: 133ms;
+       -o-transition-delay: 133ms;
+          transition-delay: 133ms;
+}
+
+.menu > li:hover .sub li:nth-child(4) {
+  -webkit-transition-delay: 200ms;
+     -moz-transition-delay: 200ms;
+      -ms-transition-delay: 200ms;
+       -o-transition-delay: 200ms;
+          transition-delay: 200ms;
+}
+
+.menu > li:hover .sub li:nth-child(5) {
+  -webkit-transition-delay: 266ms;
+     -moz-transition-delay: 266ms;
+      -ms-transition-delay: 266ms;
+       -o-transition-delay: 266ms;
+          transition-delay: 266ms;
+}
+
+.menu > li:hover .sub li:nth-child(6) {
+  -webkit-transition-delay: 333ms;
+     -moz-transition-delay: 333ms;
+      -ms-transition-delay: 333ms;
+       -o-transition-delay: 333ms;
+          transition-delay: 333ms;
+}
+
+.menu > li:hover .sub li:nth-child(7) {
+  -webkit-transition-delay: 400ms;
+     -moz-transition-delay: 400ms;
+      -ms-transition-delay: 400ms;
+       -o-transition-delay: 400ms;
+          transition-delay: 400ms;
+}
+
+.menu > li:hover .subli:nth-child(8) {
+  -webkit-transition-delay: 466ms;
+     -moz-transition-delay: 466ms;
+      -ms-transition-delay: 466ms;
+       -o-transition-delay: 466ms;
+          transition-delay: 466ms;
+}
+.sub li {
+  opacity: 0;
+
+  -webkit-transition: opacity .4s, -webkit-transform .6s, max-height .6s;
+     -moz-transition: opacity .4s,    -moz-transform .6s, max-height .6s;
+      -ms-transition: opacity .4s,     -ms-transform .6s, max-height .6s;
+       -o-transition: opacity .4s,      -o-transform .6s, max-height .6s;
+          transition: opacity .4s,         transform .6s, max-height .6s;
+}
+.menu > li:hover .sub li{
+  opacity: 1;
+
+  -webkit-transform: none;
+     -moz-transform: none;
+      -ms-transform: none;
+       -o-transform: none;
+          transform: none;
+}
+
+.sub{
+  -webkit-perspective: 400px;
+     -moz-perspective: 400px;
+      -ms-perspective: 400px;
+       -o-perspective: 400px;
+          perspective: 400px;
+}
+
+.sub li {
+
+  -webkit-transform: rotateX( -180deg );
+     -moz-transform: rotateX( -180deg );
+      -ms-transform: rotateX( -180deg );
+       -o-transform: rotateX( -180deg );
+          transform: rotateX( -180deg );
 }
